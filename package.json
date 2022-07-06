@@ -1,1 +1,8 @@
-{ "dependencies": { "bun-types": "^0.0.83" } }
+{
+  "type": "module",
+  "dependencies": {
+    "@graphql-tools/schema": "^8.5.0",
+    "bun-types": "^0.0.83",
+    "graphql": "^16.5.0"
+  }
+}
