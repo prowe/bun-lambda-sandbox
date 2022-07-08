@@ -1,0 +1,11 @@
+version=0.1
+
+[default.global.parameters]
+stack_name = "bun-graphql-sandbox"
+region = "us-east-1"
+resolve_image_repos = "true"
+
+[default.deploy.parameters]
+resolve_s3 = "true"
+fail_on_empty_changeset = "false"
+capabilities = "CAPABILITY_IAM"

@@ -1,0 +1,14 @@
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  SampleFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      DockerContext: .
+      Dockerfile: Dockerfile
+    Properties:
+      PackageType: Image
+      ImageUri: samplefunction:latest
+
+Outputs:
+  SampleFunctionName:
+    Value: !Ref SampleFunction
